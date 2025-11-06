@@ -1,5 +1,40 @@
 # dental_clinic
 ```
+dental_crm/
+│
+├─ config/
+│   ├─ config.php          # Cấu hình hệ thống, URL gốc, role
+│   └─ database.php        # Kết nối MySQL
+│
+├─ functions/
+│   └─ auth_functions.php  # Hàm đăng nhập, kiểm tra quyền
+│
+├─ public/
+│   ├─ index.php           # Trang chủ (dùng chung Guest + User)
+│   ├─ login.php           # Trang đăng nhập Admin/Bác sĩ
+│   ├─ logout.php
+│   └─ assets/
+│       ├─ css/style.css
+│       └─ js/script.js
+│
+├─ admin/
+│   ├─ dashboard.php
+│   ├─ users.php           # Quản lý bác sĩ
+│   ├─ services.php        # Quản lý dịch vụ
+│   ├─ appointments.php    # Quản lý lịch hẹn
+│   ├─ patients.php        # Quản lý hồ sơ bệnh nhân
+│   └─ payments.php        # Quản lý thanh toán
+│
+├─ doctor/
+│   ├─ dashboard.php
+│   ├─ appointments.php    # Xem lịch hẹn
+│   ├─ patients.php        # Cập nhật hồ sơ bệnh nhân
+│
+└─ guest/
+    ├─ appointment.php     # Đặt lịch hẹn
+    └─ services.php        # Xem dịch vụ phòng khám
+```
+```
 /dental_clinic/
 │
 ├── index.php                       → Trang khởi đầu (điều hướng theo vai trò)
