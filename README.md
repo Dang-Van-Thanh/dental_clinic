@@ -3,35 +3,35 @@
 dental_crm/
 │
 ├─ config/
-│   ├─ config.php          # Cấu hình hệ thống, URL gốc, role
+│   ├─ config.php          # Cấu hình hệ thống (BASE_URL, roles, site name)
 │   └─ database.php        # Kết nối MySQL
 │
 ├─ functions/
-│   └─ auth_functions.php  # Hàm đăng nhập, kiểm tra quyền
+│   └─ auth_functions.php  # Hàm đăng nhập, kiểm tra role
 │
 ├─ public/
-│   ├─ index.php           # Trang chủ (dùng chung Guest + User)
-│   ├─ login.php           # Trang đăng nhập Admin/Bác sĩ
+│   ├─ index.php           # Trang chủ (dùng chung)
+│   ├─ login.php           # Login Admin/Doctor
 │   ├─ logout.php
 │   └─ assets/
 │       ├─ css/style.css
 │       └─ js/script.js
 │
 ├─ admin/
-│   ├─ dashboard.php
+│   ├─ dashboard.php       # Dashboard + thống kê
 │   ├─ users.php           # Quản lý bác sĩ
+│   ├─ patients.php        # Quản lý bệnh nhân (dữ liệu từ form đặt lịch)
 │   ├─ services.php        # Quản lý dịch vụ
-│   ├─ appointments.php    # Quản lý lịch hẹn
-│   ├─ patients.php        # Quản lý hồ sơ bệnh nhân
+│   ├─ appointments.php    # Quản lý tất cả lịch hẹn
 │   └─ payments.php        # Quản lý thanh toán
 │
 ├─ doctor/
-│   ├─ dashboard.php
-│   ├─ appointments.php    # Xem lịch hẹn
-│   ├─ patients.php        # Cập nhật hồ sơ bệnh nhân
+│   ├─ dashboard.php       # Dashboard bác sĩ
+│   ├─ appointments.php    # Xem lịch hẹn hôm nay/tuần
+│   └─ patients.php        # Xem/hồ sơ bệnh nhân
 │
-└─ guest/
-    ├─ appointment.php     # Đặt lịch hẹn
+└─ patient/
+    ├─ appointment.php     # Đặt lịch hẹn (không login)
     └─ services.php        # Xem dịch vụ phòng khám
 ```
 ```
