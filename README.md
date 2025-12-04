@@ -4,9 +4,9 @@ flowchart TD
     B --> C[Phỏng vấn Recruiter]
     C --> D{Kiểm tra kỹ năng}
     
-    D --> D1[Coding Test\n(Technical roles)]
-    D --> D2[Case Study\n(Business roles)]
-    D --> D3[SQL / Data Test\n(Data roles)]
+    D --> D1[Coding Test(Technical roles)]
+    D --> D2[Case Study(Business roles)]
+    D --> D3[SQL / Data Test(Data roles)]
     
     D1 --> E
     D2 --> E
