@@ -1,3 +1,21 @@
+```mermaid
+flowchart TD
+    A[Nộp hồ sơ] --> B[Sàng lọc CV]
+    B --> C[Phỏng vấn Recruiter]
+    C --> D{Kiểm tra kỹ năng}
+    
+    D --> D1[Coding Test<br>(Technical roles)]
+    D --> D2[Case Study<br>(Business roles)]
+    D --> D3[SQL / Data Test<br>(Data roles)]
+    
+    D1 --> E
+    D2 --> E
+    D3 --> E
+    
+    E[Phỏng vấn On-site<br>4–6 vòng] --> F[Hiring Committee]
+    F --> G[Team Matching]
+    G --> H[Job Offer]
+```
 # dental_clinic
 ```
 dental_crm/
