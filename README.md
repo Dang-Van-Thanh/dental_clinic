@@ -1,21 +1,22 @@
 ```mermaid
 flowchart TD
-    A[Nộp hồ sơ] --> B[Sàng lọc CV]
-    B --> C[Phỏng vấn Recruiter]
-    C --> D{Kiểm tra kỹ năng}
+    A["Nộp hồ sơ"] --> B["Sàng lọc CV"]
+    B --> C["Phỏng vấn Recruiter"]
+    C --> D{"Kiểm tra kỹ năng"}
     
-    D --> D1[Coding Test - Technical roles]
-    D --> D2[Case Study - Business roles]
-    D --> D3[SQL / Data Test - Data roles]
+    D --> D1["Coding Test - Technical roles"]
+    D --> D2["Case Study - Business roles"]
+    D --> D3["SQL / Data Test - Data roles"]
     
-    D1 --> E
+    D1 --> E["Phỏng vấn On-site 4–6 vòng"]
     D2 --> E
     D3 --> E
     
-    E[Phỏng vấn On-site 4–6 vòng] --> F[Hiring Committee]
-    F --> G[Team Matching]
-    G --> H[Job Offer]
+    E --> F["Hiring Committee"]
+    F --> G["Team Matching"]
+    G --> H["Job Offer"]
 ```
+
 
 
 
